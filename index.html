@@ -4,47 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Curso de Machine Learning</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <style>
-        body {
-            background-color: #eef7ff;
-        }
-        .container {
-            background-color: #ffffff;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        section {
-            border: 2px solid #00509e;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-        }
-        h2 {
-            color: #00509e;
-        }
-        a {
-            color: #007acc;
-        }
-        a:hover {
-            color: #00509e;
-        }
-    </style>
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <style>
+       body {
+           background-color: #eef7ff;
+       }
+       .container {
+           background-color: #ffffff;
+           border-radius: 10px;
+           padding: 20px;
+           box-shadow: 0 0 10px rgba(0,0,0,0.1);
+       }
+       section {
+           border: 2px solid #00509e;
+           padding: 20px;
+           margin-bottom: 20px;
+           border-radius: 10px;
+       }
+       h2 {
+           color: #00509e;
+       }
+       a {
+           color: #007acc;
+       }
+       a:hover {
+           color: #00509e;
+       }
+       .navbar {
+           margin-bottom: 20px;
+       }
+   </style>
 </head>
 <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#glosario">Glosario</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#notebooks">Notebooks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#diapositivas">Diapositivas</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
 <div class="container mt-5">
     <!-- Sección de Glosario -->
     <section id="glosario">
         <h2>Glosario</h2>
         <dl class="row">
-            <dt class="col-sm-3">Machine Learning</dt>
-            <dd class="col-sm-9">Un tipo de inteligencia artificial que permite a un sistema aprender de los datos en lugar de a través de la programación explícita.</dd>
-
-            <dt class="col-sm-3">Algoritmo</dt>
-            <dd class="col-sm-9">Un conjunto de instrucciones o reglas definidas que se seguirán en el cálculo o en la resolución de un problema.</dd>
+            <dt class="col-sm-3">Aprendizaje Supervisado</dt>
+            <dd class="col-sm-9">Tipo de aprendizaje en el que el modelo se entrena con un conjunto de datos etiquetado, es decir, cada muestra de entrenamiento tiene un resultado o etiqueta asociada.</dd>
+            
+            <dt class="col-sm-3">Aprendizaje No Supervisado</dt>
+            <dd class="col-sm-9">Tipo de aprendizaje en el que el modelo se entrena con un conjunto de datos sin etiquetar, buscando encontrar patrones y estructuras en los datos.</dd>
+            
+            <dt class="col-sm-3">Aprendizaje por Reforzamiento</dt>
+            <dd class="col-sm-9">Tipo de aprendizaje donde el modelo aprende a tomar decisiones a través de la interacción con un entorno, recibiendo recompensas o penalizaciones.</dd>
+            
+            <dt class="col-sm-3">Algoritmo de Aprendizaje</dt>
+            <dd class="col-sm-9">Un procedimiento o fórmula que se utiliza para adaptar un modelo a los datos.</dd>
+            
+            <dt class="col-sm-3">Modelo</dt>
+            <dd class="col-sm-9">Una representación matemática o computacional basada en los datos de entrenamiento, que se utiliza para hacer predicciones o decisiones.</dd>
+            
+            <dt class="col-sm-3">Características</dt>
+            <dd class="col-sm-9">Las variables o atributos del conjunto de datos que se utilizan para entrenar el modelo.</dd>
+            
+            <dt class="col-sm-3">Etiquetas</dt>
+            <dd class="col-sm-9">Los resultados o valores objetivo en un conjunto de datos etiquetado, utilizados en aprendizaje supervisado.</dd>
+            
+            <dt class="col-sm-3">Conjunto de Entrenamiento</dt>
+            <dd class="col-sm-9">Subconjunto de datos utilizado para entrenar el modelo.</dd>
+            
+            <dt class="col-sm-3">Conjunto de Pruebas</dt>
+            <dd class="col-sm-9">Subconjunto de datos utilizado para evaluar el rendimiento del modelo.</dd>
+            
+            <dt class="col-sm-3">Validación Cruzada</dt>
+            <dd class="col-sm-9">Técnica de evaluación del modelo que divide el conjunto de datos en varios subconjuntos, entrena el modelo en algunos de ellos y lo evalúa en los restantes.</dd>
+            
+            <dt class="col-sm-3">Sobreajuste</dt>
+            <dd class="col-sm-9">Cuando un modelo aprende demasiado bien los datos de entrenamiento, incluyendo el ruido, y generaliza mal a nuevos datos.</dd>
+            
+            <dt class="col-sm-3">Subajuste</dt>
+            <dd class="col-sm-9">Cuando un modelo no aprende suficientemente bien la estructura de los datos de entrenamiento y generaliza mal a nuevos datos.</dd>
+            
+            <dt class="col-sm-3">Regresión</dt>
+            <dd class="col-sm-9">Tipo de tarea de aprendizaje supervisado que predice un valor continuo.</dd>
+            
+            <dt class="col-sm-3">Clasificación</dt>
+            <dd class="col-sm-9">Tipo de tarea de aprendizaje supervisado que predice una etiqueta categórica.</dd>
+            
+            <dt class="col-sm-3">Clustering</dt>
+            <dd class="col-sm-9">Tarea de aprendizaje no supervisado que agrupa datos similares.</dd>
+            
+            <dt class="col-sm-3">Reducción de Dimensionalidad</dt>
+            <dd class="col-sm-9">Técnica que reduce el número de características mientras conserva la estructura de los datos.</dd>
+            
+            <dt class="col-sm-3">Hiperparámetros</dt>
+            <dd class="col-sm-9">Parámetros del algoritmo de aprendizaje que se deben configurar antes del entrenamiento y no se aprenden de los datos.</dd>
+            
+            <dt class="col-sm-3">Métricas de Evaluación</dt>
+            <dd class="col-sm-9">Medidas utilizadas para evaluar el rendimiento de un modelo, como la precisión, la exhaustividad y el área bajo la curva ROC.</dd>
+            
+            <dt class="col-sm-3">Grid Search</dt>
+            <dd class="col-sm-9">Técnica para seleccionar los hiperparámetros óptimos de un modelo mediante la exploración exhaustiva de un conjunto predefinido de valores de hiperparámetros.</dd>
+            
+            <dt class="col-sm-3">Scikit-Learn (sklearn)</dt>
+            <dd class="col-sm-9">Biblioteca de Python para machine learning que proporciona herramientas simples y eficientes para el análisis de datos.</dd>
+            
         </dl>
     </section>
     
@@ -52,8 +129,12 @@
     <section id="notebooks" class="mt-5">
         <h2>Notebooks</h2>
         <ul>
-            <li><a href="https://colab.research.google.com/notebook1.ipynb" target="_blank">Notebook 1: Introducción al Machine Learning</a></li>
-            <li><a href="https://colab.research.google.com/notebook2.ipynb" target="_blank">Notebook 2: Regresión Lineal</a></li>
+            <li><a href="https://colab.research.google.com/drive/1c0h1l3noTwlq8gBvegEbvAJFednJDp-5?usp=sharing" target="_blank">Notebook día 1: xx</a></li>
+            <li><a href="https://colab.research.google.com/drive/10xfkNxYZqysT6DZ6GIIbLi7YZlXVpdEp?usp=sharing" target="_blank">Notebook día 2: xx</a></li>
+            <li><a href="https://colab.research.google.com/drive/1MLOh18i1sQE2vf7LMiprMVS4P9dgMumL?usp=sharing" target="_blank">Notebook día 3: xx</a></li>
+            <li><a href="https://colab.research.google.com/drive/1jvesPrH7kwC8oR7nPEcKQ7Xs3j1fps1T?usp=sharing" target="_blank">Notebook día 4: xx</a></li>
+            <li><a href="https://colab.research.google.com/drive/1pq4gNtBJWwHB0a4RB5X56zsVdNjppsF7?usp=sharing" target="_blank">Notebook día 5: xx</a></li>
+
         </ul>
     </section>
     
@@ -61,8 +142,11 @@
     <section id="diapositivas" class="mt-5">
         <h2>Diapositivas</h2>
         <ul>
-            <li><a href="https://docs.google.com/presentation/d/1abcd" target="_blank">Dia 1</a></li>
-            <li><a href="https://docs.google.com/presentation/d/2efgh" target="_blank">Dia 2</a></li>
+            <li><a href="https://docs.google.com/presentation/d/18HzNy2mAebp9x9_fxW_EJwJGkYTY-lpOK09kMB55cWA/edit?usp=sharing" target="_blank">Diapositivas día 1: xx</a></li>
+            <li><a href="https://docs.google.com/presentation/d/1azUO3yVh0sq6QTAwyf0_ca_vKcUhtlMXPWhjpWre8Vc/edit?usp=sharing" target="_blank">Diapositivas día 2: xx</a></li>
+            <li><a href="https://docs.google.com/presentation/d/1abcd" target="_blank">Diapositivas día 3: xx</a></li>
+            <li><a href="https://docs.google.com/presentation/d/1abcd" target="_blank">Diapositivas día 4: xx</a></li>
+            <li><a href="https://docs.google.com/presentation/d/1abcd" target="_blank">Diapositivas día 5: xx</a></li>
         </ul>
     </section>
 </div>
