@@ -48,11 +48,14 @@
               <a class="nav-link" href="#glosario">Glosario</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#notebooks">Notebooks</a>
+              <a class="nav-link" href="#notebooks">Notebooks</a>Cheatsheets
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#diapositivas">Diapositivas</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Cheatsheets">Diapositivas</a>
+              </li>
           </ul>
         </div>
       </nav>
@@ -62,6 +65,19 @@
     <section id="glosario">
         <h2>Glosario</h2>
         <dl class="row">
+
+            <dt class="col-sm-3">Algoritmos Evolutivos</dt>
+            <dd class="col-sm-9">Métodos de optimización inspirados en la evolución biológica que trabajan con una población de soluciones, seleccionándolas, combinándolas y mutándolas para mejorar su calidad.</dd>
+
+            <dt class="col-sm-3">Lógica Difusa</dt>
+            <dd class="col-sm-9">Extensión de la lógica clásica que maneja conceptos imprecisos mediante grados de verdad, permitiendo decisiones en ambientes con información ambigua o incierta.</dd>
+
+            <dt class="col-sm-3">Agentes</dt>
+            <dd class="col-sm-9">Entidades que perciben y actúan en un entorno, basándose en reglas o algoritmos, para maximizar algún beneficio o recompensa.</dd>
+
+            <dt class="col-sm-3">Sistemas Expertos</dt>
+            <dd class="col-sm-9">Programas que imitan el razonamiento de expertos humanos en áreas específicas, basándose en un conjunto de reglas y un banco de conocimientos.</dd>
+
             <dt class="col-sm-3">Aprendizaje Supervisado</dt>
             <dd class="col-sm-9">Tipo de aprendizaje en el que el modelo se entrena con un conjunto de datos etiquetado, es decir, cada muestra de entrenamiento tiene un resultado o etiqueta asociada.</dd>
             
@@ -122,6 +138,33 @@
             <dt class="col-sm-3">Scikit-Learn (sklearn)</dt>
             <dd class="col-sm-9">Biblioteca de Python para machine learning que proporciona herramientas simples y eficientes para el análisis de datos.</dd>
             
+            <dt class="col-sm-3">ID3 (Iterative Dichotomiser 3)</dt>
+            <dd class="col-sm-9">Es uno de los primeros algoritmos desarrollados para generar árboles de decisión. Fue propuesto por Ross Quinlan en 1986. El algoritmo utiliza un enfoque top-down y emplea el concepto de entropía y ganancia de información para elegir el atributo que mejor divide el conjunto de datos en cada nivel del árbol.</dd>
+            
+            <dt class="col-sm-3">C4.5</dt>
+            <dd class="col-sm-9">Es una extensión y mejora del algoritmo ID3, también desarrollado por Ross Quinlan. C4.5 introdujo varias mejoras, como el manejo de atributos con valores faltantes y la capacidad de trabajar con atributos tanto discretos como continuos. Además, en lugar de utilizar solamente la ganancia de información, C4.5 emplea una métrica llamada "ratio de ganancia" para evitar un sesgo hacia atributos con muchos valores distintos..</dd>
+            
+            <dt class="col-sm-3">Boosting</dt>
+            <dd class="col-sm-9">Es una estrategia que entrena modelos de manera secuencial, donde cada nuevo modelo se enfoca en corregir los errores cometidos por los modelos anteriores. A través de esta corrección iterativa, el boosting busca incrementar la precisión del modelo final, reduciendo tanto el sesgo como la varianza. Algunos algoritmos populares basados en boosting incluyen AdaBoost, Gradient Boosting Machines (GBM) y XGBoost.</dd>
+            
+            <dt class="col-sm-3">Bagging (Bootstrap Aggregating)</dt>
+            <dd class="col-sm-9">Es una técnica de ensemble learning que implica entrenar varios modelos en paralelo utilizando subconjuntos aleatorios de los datos de entrenamiento, creados mediante muestreo con reemplazo. El objetivo principal de bagging es reducir la varianza del modelo final y evitar el sobreajuste, siendo el algoritmo de bosques aleatorios (Random Forest) una aplicación destacada de esta técnica.</dd>
+                        
+            <dt class="col-sm-3">Deep Learning (Aprendizaje Profundo)</dt>
+            <dd class="col-sm-9">Subárea del machine learning basada en redes neuronales profundas capaces de aprender patrones complejos directamente de grandes cantidades de datos, automatizando la extracción de características y siendo eficaz en tareas como reconocimiento de imágenes y procesamiento de lenguaje natural.</dd>
+
+            <dt class="col-sm-3">BERT (Bidirectional Encoder Representations from Transformers)</dt>
+            <dd class="col-sm-9">Modelo de procesamiento de lenguaje natural que utiliza transformers para entender el contexto de las palabras en un texto, analizando simultáneamente las palabras anteriores y posteriores.</dd>
+            
+            <dt class="col-sm-3">GPT (Generative Pre-trained Transformer)</dt>
+            <dd class="col-sm-9">Modelo de lenguaje basado en transformers entrenado primero en grandes cantidades de texto, conocido por generar texto coherente y fluido y adaptarse a tareas específicas.</dd>
+            
+            <dt class="col-sm-3">ResNet (Residual Networks)</dt>
+            <dd class="col-sm-9">Arquitectura de red neuronal diseñada para el reconocimiento de imágenes que introduce "conexiones residuales", facilitando el entrenamiento de redes con muchas capas.</dd>
+            
+            <dt class="col-sm-3">Ecuación polinómica</dt>
+            <dd class="col-sm-9">es una expresión matemática que representa una relación entre variables utilizando sumas de términos, donde cada término es el producto de un coeficiente y una variable elevada a una potencia entera no negativa.</dd>
+            
         </dl>
     </section>
     
@@ -129,11 +172,11 @@
     <section id="notebooks" class="mt-5">
         <h2>Notebooks</h2>
         <ul>
-            <li><a href="https://colab.research.google.com/drive/1c0h1l3noTwlq8gBvegEbvAJFednJDp-5?usp=sharing" target="_blank">Notebook día 1: xx</a></li>
-            <li><a href="https://colab.research.google.com/drive/10xfkNxYZqysT6DZ6GIIbLi7YZlXVpdEp?usp=sharing" target="_blank">Notebook día 2: xx</a></li>
-            <li><a href="https://colab.research.google.com/drive/1MLOh18i1sQE2vf7LMiprMVS4P9dgMumL?usp=sharing" target="_blank">Notebook día 3: xx</a></li>
-            <li><a href="https://colab.research.google.com/drive/1jvesPrH7kwC8oR7nPEcKQ7Xs3j1fps1T?usp=sharing" target="_blank">Notebook día 4: xx</a></li>
-            <li><a href="https://colab.research.google.com/drive/1pq4gNtBJWwHB0a4RB5X56zsVdNjppsF7?usp=sharing" target="_blank">Notebook día 5: xx</a></li>
+            <li><a href="https://colab.research.google.com/drive/116uX5UtGsBRztfVozh4hqeHSZnur_Hbf?usp=sharing" target="_blank">Notebook 1: Numpy</a></li>
+            <li><a href="https://colab.research.google.com/drive/18A9NS6XjXUSwD1OFyB5z_ARjyxdh2Ipv?usp=sharing" target="_blank">Notebook 2: Pandas</a></li>
+            <li><a href="https://colab.research.google.com/drive/1-uA19BZc-Y4mBlrMFMpzb76HzCgF1xUA?usp=sharing" target="_blank">Notebook 3: Matplotlib</a></li>
+            <li><a href="https://colab.research.google.com/drive/196QK7fs-3-qWL3O7KGNx1GxxtdIqcqy4?usp=sharing" target="_blank">Notebook 4: EDA</a></li>
+            <li><a href="https://" target="_blank">Notebook 5: xx</a></li>
 
         </ul>
     </section>
@@ -142,11 +185,18 @@
     <section id="diapositivas" class="mt-5">
         <h2>Diapositivas</h2>
         <ul>
-            <li><a href="https://docs.google.com/presentation/d/18HzNy2mAebp9x9_fxW_EJwJGkYTY-lpOK09kMB55cWA/edit?usp=sharing" target="_blank">Diapositivas día 1: xx</a></li>
-            <li><a href="https://docs.google.com/presentation/d/1azUO3yVh0sq6QTAwyf0_ca_vKcUhtlMXPWhjpWre8Vc/edit?usp=sharing" target="_blank">Diapositivas día 2: xx</a></li>
-            <li><a href="https://docs.google.com/presentation/d/1abcd" target="_blank">Diapositivas día 3: xx</a></li>
-            <li><a href="https://docs.google.com/presentation/d/1abcd" target="_blank">Diapositivas día 4: xx</a></li>
-            <li><a href="https://docs.google.com/presentation/d/1abcd" target="_blank">Diapositivas día 5: xx</a></li>
+            <li><a href="https://docs.google.com/presentation/d/1qOUKteN6nVQQ9UhvBEmNx7_zGk2gV3sxdOEXZ1VsvRo/edit?usp=sharing" target="_blank">Diapositivas </a></li>
+        </ul>
+    </section>
+
+    <!-- Sección de Diapositivas de Google -->
+    <section id="Cheatsheets" class="mt-5">
+        <h2>Cheat Sheets</h2>
+        <ul>
+            <li><a href="https://images.datacamp.com/image/upload/v1676302459/Marketing/Blog/Numpy_Cheat_Sheet.pdf" target="_blank">Numpy </a></li>
+            <li><a href="https://images.datacamp.com/image/upload/f_auto,q_auto:best/v1621255989/Pandas_Cheat_Sheet_for_Data_Science_in_Python_hqirhp.png target="_blank">Pandas </a></li>
+            <li><a href="https://images.datacamp.com/image/upload/f_auto,q_auto:best/v1625838238/Matplotlib_Cheat_Sheet-_Plotting_in_Python_htbtut.png" target="_blank">Matplotlib </a></li>
+            <li><a href="https://images.datacamp.com/image/upload/f_auto,q_auto:best/v1625837937/Scikit-Learn_Cheat_Sheet-_Python_Machine_Learning_wxjgwe.png" target="_blank">Scikit-Learn </a></li>
         </ul>
     </section>
 </div>
