@@ -6,8 +6,6 @@ categories: [blog, introduction, machine-learning]
 tags: [first-post, welcome, mlops, fintech, kueski]
 ---
 
-# Welcome to My Technical Blog!
-
 ¡Hola! I'm Efren Bautista Linares, and I'm excited to share my journey in machine learning engineering, fintech innovation, and engineering leadership through this blog. 🚀
 
 ## Who Am I?
