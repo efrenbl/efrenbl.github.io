@@ -1,12 +1,12 @@
 # Site settings
-title: Efren's Personal Site
-email: your-email@example.com
+title: efren.dev
+email: efrenbl@proton.me
 description: >-
-  Welcome to my personal website. Here you'll find my thoughts, projects,
-  and anything else I'd like to share with the world.
+  Staff Machine Learning Engineer, IEEE Volunteer, and Career Coach 
+  specializing in MLOps, cloud architecture, and engineering leadership.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://efrenbl.github.io" # the base hostname & protocol for your site
-twitter_username: your_twitter_username
+linkedin_username: efrenbl
 github_username: efrenbl
 
 # Build settings
@@ -16,6 +16,12 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+
+# GitHub Pages safe plugins only
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
 
 # Exclude from processing
 exclude:
@@ -53,3 +59,10 @@ defaults:
 # Pagination
 paginate: 5
 paginate_path: "/page:num/"
+
+# Navigation
+header_pages:
+  - blog.md
+  - about.md
+  - projects.md
+  - experience.md
