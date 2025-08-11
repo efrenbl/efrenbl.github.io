@@ -3,7 +3,7 @@ layout: page
 title: Blog
 permalink: /blog/
 ---
-
+<!-- 
 # Technical Blog
 
 Welcome to my technical blog! I share insights on **machine learning engineering**, **cloud architecture**, **fintech innovation**, and **engineering leadership**. Whether you're building ML platforms, scaling infrastructure, or leading engineering teams, you'll find practical insights and lessons learned from real-world implementations.
@@ -36,7 +36,7 @@ Welcome to my technical blog! I share insights on **machine learning engineering
 
 </div>
 
----
+--- -->
 
 ## 📚 Latest Posts
 
@@ -68,26 +68,3 @@ Welcome to my technical blog! I share insights on **machine learning engineering
 </div>
 {% endif %}
 
----
-
-## 💬 Let's Discuss
-
-I love engaging with the technical community! If you have questions about any of my posts, want to discuss ML engineering challenges, or have ideas for future content, feel free to reach out.
-
-**Connect with me:**
-- 📧 [Email me](mailto:efrenbl@proton.me) for detailed technical discussions
-- 💼 [LinkedIn](https://linkedin.com/in/efrenbl) for professional networking
-- 💻 [GitHub](https://github.com/efrenbl) to see my code and contributions
-
----
-
-## 📈 Subscribe for Updates
-
-Want to stay updated on new posts? Connect with me on [LinkedIn](https://linkedin.com/in/efrenbl) where I share updates about new blog posts, interesting projects, and insights from the ML engineering world.
-
-**Topics you can expect:**
-- Building ML platforms at fintech scale
-- Cloud security for ML applications  
-- Engineering leadership lessons learned
-- Career advice for ML engineers
-- IEEE community insights and opportunities
