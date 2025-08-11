@@ -1,0 +1,111 @@
+---
+layout: default
+---
+
+<div class="home">
+  <div class="two-column-layout">
+    <div class="left-column">
+      <div class="about-section">
+        {{ content }}
+      </div>
+    </div>
+    
+    <div class="right-column">
+      <div class="blog-section">
+        <h2>Latest Posts</h2>
+        {%- if site.posts.size > 0 -%}
+          <ul class="post-list">
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            {%- for post in site.posts -%}
+            <li>
+              <span class="post-meta">{{ post.date | date: date_format }}</span>
+              <h3>
+                <a class="post-link" href="{{ post.url | relative_url }}">
+                  {{ post.title | escape }}
+                </a>
+              </h3>
+              {%- if site.show_excerpts -%}
+                {{ post.excerpt }}
+              {%- endif -%}
+            </li>
+            {%- endfor -%}
+          </ul>
+
+          <p class="feed-subscribe">
+            <a href="{{ 'feed.xml' | relative_url }}">
+              <svg class="svg-icon orange">
+                <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
+              </svg><span>Subscribe</span>
+            </a>
+          </p>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.two-column-layout {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.left-column {
+  flex: 0 0 30%;
+  min-width: 0;
+}
+
+.right-column {
+  flex: 0 0 70%;
+  min-width: 0;
+}
+
+.post-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.post-list li {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.post-list li:last-child {
+  border-bottom: none;
+}
+
+.post-meta {
+  font-size: 0.875rem;
+  color: #828282;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.post-list h3 {
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 1.4;
+}
+
+.post-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.post-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .two-column-layout {
+    flex-direction: column;
+  }
+  
+  .left-column,
+  .right-column {
+    flex: 1 1 auto;
+  }
+}</style>
